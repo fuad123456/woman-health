@@ -30,6 +30,20 @@ a{
 	margin: 0 auto;
 	padding: 0 20px;
 }
+
+/* ///////////////////////COMPONENTS */
+.section-desc{
+	font-family: 'Philosopher';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 120%;
+	text-align: center;
+	text-transform: uppercase;
+
+color: #3F3D56;
+}
+/* ///////////////////////HEADER */
 .header{
 	padding: 28px 0;
 }
@@ -338,6 +352,33 @@ h1{
 .leaders-item-desc .main-btn{
 	padding: 15px 64px;
 }
+/* ////////////////////////////////////////free-delivery */
+.free-delivery{
+	position: relative;
+	overflow-x: hidden;
+	padding-top: 380px;
+	background: url(./assets/background/rose-petals.png) 78% 10% no-repeat,
+				url(./assets/img/flower.png) -17% 8% no-repeat;
+	background-repeat: no-repeat;
+}
+.flower{
+	position: absolute;
+	top: 51%;
+	right: -10%;
+	transform: rotate(190deg);
+	z-index: 1;
+}
+.free-delivery-secondary{
+	padding-top: 380px;
+	background: url(./assets/background/free-delivery.png) no-repeat;
+}
+.desc-2{
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+}
 /* //////////////////////////////////FOOTER */
 .footer {
 	padding: 62px 0 32px 0;
@@ -436,6 +477,9 @@ h1{
 }
 .mta{
 	margin-top: auto;
+}
+.m0a{
+	margin:0 auto;
 }
 .g30{
 	gap: 30px;
