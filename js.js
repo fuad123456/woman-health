@@ -1,15 +1,36 @@
-$('.nav-tabs a').click(function(){
-    $(this).tab('show');
-})
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  autoplay: {
+    delay: 4000,
+  },
 
-// Select tab by name
-$('.nav-tabs a[href="#home"]').tab('show')
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: "auto",
+  spaceBetween: 0,
+  loopedSlides: 5,
+  // loopedSlides:3,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
 
-// Select first tab
-$('.nav-tabs a:first').tab('show')
-
-// Select last tab
-$('.nav-tabs a:last').tab('show')
-
-// Select fourth tab (zero-based)
-$('.nav-tabs li:eq(3) a').tab('show')
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+  },
+});
+const swiper1 = document.querySelector(".swiper").swiper;

@@ -32,7 +32,7 @@ a{
 }
 
 /* ///////////////////////COMPONENTS */
-.section-desc{
+.section-title{
 	font-family: 'Philosopher';
 	font-style: normal;
 	font-weight: 700;
@@ -40,8 +40,7 @@ a{
 	line-height: 120%;
 	text-align: center;
 	text-transform: uppercase;
-
-color: #3F3D56;
+	color: #3F3D56;
 }
 /* ///////////////////////HEADER */
 .header{
@@ -389,9 +388,70 @@ h1{
 .brands{
 	margin-top: 100px;
 }
-.feedback{
+/* /////////////////////////////////////////reviews */
+.reviews{
 	margin-top: 150px;
-	background: radial-gradient(50% 50% at 50% 50%, rgba(185, 189, 223, 0.38) 0%, #B9BDDF 100%);
+	padding: 100px 0 86px;
+	background: radial-gradient(50% 50% at 50% 50%, rgba(185, 189, 223, 0.38) 0%, #B9BDDF 100%), url(./assets/background/pngwing.png);
+}
+.swiper-card{
+	max-width: 600px;
+	padding: 55px 48px 14px 70px;
+	background: #FFFFFF;
+	border-radius: 21px;
+	filter: drop-shadow(4px 4px 10px rgba(132, 131, 131, 0.5)) drop-shadow(4px 4px 10px rgba(132, 131, 131, 0.5));
+}
+.swiper-card-block{
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+.reviews .swiper-card .title{
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 140%;
+}
+.reviews .swiper-card .desc{
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 120%;
+}
+.swiper-card-desc a{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #000000;
+}
+.reviews .swiper-card .secondary-desc{
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 100%;
+}
+.reviews-block{
+	padding: 36px 42px 20px 42px;
+	background-color: rgba(255, 183, 0, 1);
+	box-shadow: 4px 4px 10px rgba(132, 131, 131, 0.5);
+	border-radius: 21px;
+	width: 350px;
+}
+
+.reviews-block .title{
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.reviews-block .amount{
+	font-weight: 700;
+	font-size: 90px;
+	line-height: 110px;
+	/* identical to box height */
+	text-align: center;
+	text-transform: uppercase;
+	
+	color: #FFFFFF;
 }
 /* //////////////////////////////////FOOTER */
 .footer {
@@ -438,6 +498,9 @@ h1{
 /* UTILITIES */
 .wi{
 	width: inherit;
+}
+.maw-lg{
+	max-width: 1580px;
 }
 .little-desc{
 	font-weight: 400;
@@ -497,6 +560,18 @@ h1{
 }
 .g30{
 	gap: 30px;
+}
+.op5{
+	opacity: 0.5;
+}
+.cw{
+	color: #ffffff;
+}
+.bgc-y{
+	background-color: rgba(255, 183, 0, 1);
+}
+.mt50{
+	margin-top: 50px;
 }
 .mt25{
 	margin-top: 25px;
