@@ -357,17 +357,20 @@ h1{
 	overflow-x: hidden;
 	padding-top: 380px;
 	background: url(./assets/background/rose-petals.png) 78% 10% no-repeat,
-				url(./assets/img/flower.png) -17% 8% no-repeat,
+				url(./assets/img/flower.png) -10% 0% no-repeat,
 				url(./assets/background/free-delivery.png) 50% 82% repeat;
 
 	background-repeat: no-repeat;
 }
-.flower{
+.free-delivery .flower{
+	width: 445px;
+	height: 441px;
 	position: absolute;
 	top: 51%;
 	right: -10%;
 	transform: rotate(190deg);
 	z-index: 1;
+	background: url(./assets/img/flower.png) 10% 50% no-repeat;
 }
 .free-delivery-secondary{
 	/* padding-top: 380px; */
@@ -502,10 +505,24 @@ h1{
 .korean-cosmetic{
 	margin-top: 150px;
 }
-.banner{
+.banner-section{
 	margin-top: 150px;
+	background: url(./assets/img/flower3.png) -7% 114% no-repeat,
+				url(./assets/img/flower4.png) 125% 75% no-repeat
+}
+.banner{
 	height: 742px;
 	background-image: url(./assets/img/banner.png);
+}
+.banner-title{
+	padding-top: 110px;
+	font-weight: 700;
+	font-size: 96px;
+	line-height: 120%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFC42D;
+	margin-bottom: 0;
 }
 .banner-text{
 	font-weight: 700;
@@ -514,8 +531,129 @@ h1{
 	text-align: center;
 	text-transform: uppercase;
 	color: #FFFFFF;
+	font-family: 'Philosopher';
+	margin-bottom: 22px;
 }
-/* //////////////////////////////////FOOTER */
+.banner .secondary-title{
+	font-family: 'Philosopher';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 120%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 24px;
+}
+.form-section{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: url(./assets/background/rose-petals.png)
+}
+.form-section-block{
+	max-width: 800px;
+	background: #FFFFFF;
+	box-shadow: 4px 4px 10px rgba(132, 131, 131, 0.5), 4px 4px 10px rgba(132, 131, 131, 0.5);
+	border-radius: 21px;
+	padding:72px 80px;
+	margin:0 auto;
+}
+.form-title{
+	font-family: 'Philosopher';
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 120%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #6BA439;
+}
+.form-description{
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #6BA439;
+}
+.form-inp{
+	border-radius: 21px;
+	padding:22px 28px;
+	border:none;
+	background-color:#FCF3DB;
+	max-width: 386px;
+}
+.form-inp::placeholder{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.3);
+}
+.form-section .main-btn{
+	background: linear-gradient( 15deg, rgb(245, 205, 110),  rgb(254, 185, 9));
+	/* background-color: rgb(245, 205, 110) rgb(254, 185, 9); */
+}
+.custom-checkbox1+label {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+  }
+  .custom-checkbox1 {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+  }
+  .custom-checkbox1+label::before {
+	content: '';
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	border: 1px solid #adb5bd;
+	border-radius: 0.25em;
+	margin-right: 0.5em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+  }
+  .custom-checkbox1:checked+label::before {
+	border-color: rgba(0, 0, 0, 0.3);
+	background-color: #ffffff;
+	background-image: url(./assets/svg/check.svg);
+  }
+  .custom-checkbox1:not(:disabled):not(:checked)+label:hover::before {
+	border-color: #b3d7ff;
+  }
+
+  /* стили для активного чекбокса (при нажатии на него) */
+  .custom-checkbox1:not(:disabled):active+label::before {
+	background-color: #b3d7ff;
+	border-color: #b3d7ff;
+  }
+
+  /* стили для чекбокса, находящегося в фокусе */
+  .custom-checkbox1:focus+label::before {
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+  .custom-checkbox1:focus:not(:checked)+label::before {
+	border-color: #80bdff;
+  }
+
+  /* стили для чекбокса, находящегося в состоянии checked */
+  .custom-checkbox1:checked+label::before {
+	border-color: #0b76ef;
+	background-color: #ffffff;
+	background-image: url(./assets/svg/check.svg);
+  }
+
+  /* стили для чекбокса, находящегося в состоянии disabled */
+  .custom-checkbox1:disabled+label::before {
+	background-color: #e9ecef;
+  }
+	/* //////////////////////////////////FOOTER */
 .footer {
 	padding: 62px 0 32px 0;
 	background: #B7D37D;
@@ -561,11 +699,18 @@ h1{
 .wi{
 	width: inherit;
 }
+.mra{
+	margin-right: auto;
+	max-width: 900px;
+}
 .maw-lg{
 	max-width: 1580px;
 }
 .maw475{
 	max-width: 475px;
+}
+.maw540{
+	max-width: 540px;
 }
 .little-desc{
 	font-weight: 400;
@@ -631,6 +776,10 @@ h1{
 }
 .cw{
 	color: #ffffff;
+}
+.cy{
+	color: #FFC42D;
+
 }
 .bgc-y{
 	background-color: rgba(255, 183, 0, 1);
