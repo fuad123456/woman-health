@@ -456,6 +456,7 @@ h1{
 .blog{
 	padding-top: 150px;
 	position: relative;
+	overflow-x: hidden;
 }
 .blog .petals{
 	width: 768px;
@@ -465,9 +466,19 @@ h1{
 	top: 0;
 	background: url(./assets/background/rose-petals2.png)
 }
+.blog .flower{
+	position: absolute;
+	width: 456px;
+	height: 360px;
+    right: -2%;
+    top: -2%;
+    transform: rotate(97deg);
+	background: url(./assets/img/flower2.png)
+}
 .beautyblog-card{
 	background: #F1CBC9;
 	border-radius: 21px 21px 21px 21px;
+
 }
 
 .beautyblog-block{
@@ -486,6 +497,10 @@ h1{
 	font-size: 16px;
 	line-height: 20px;
 	margin-bottom: 16px;
+}
+/* ////////////////////////////////////////korean-cosmetic */
+.korean-cosmetic{
+	margin-top: 150px;
 }
 /* //////////////////////////////////FOOTER */
 .footer {
@@ -535,6 +550,9 @@ h1{
 }
 .maw-lg{
 	max-width: 1580px;
+}
+.maw475{
+	max-width: 475px;
 }
 .little-desc{
 	font-weight: 400;
