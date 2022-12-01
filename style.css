@@ -484,7 +484,7 @@ h1{
 .beautyblog-block{
 	padding:75px 56px 75px 120px;
 }
-.beautyblog .title{
+.beautyblog-block .title{
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 29px;
@@ -492,7 +492,7 @@ h1{
 	color: #FFFFFF;
 	margin-bottom: 14px;
 }
-.beautyblog .desc{
+.beautyblog-block .desc{
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 20px;
@@ -501,6 +501,19 @@ h1{
 /* ////////////////////////////////////////korean-cosmetic */
 .korean-cosmetic{
 	margin-top: 150px;
+}
+.banner{
+	margin-top: 150px;
+	height: 742px;
+	background-image: url(./assets/img/banner.png);
+}
+.banner-text{
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 120%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
 }
 /* //////////////////////////////////FOOTER */
 .footer {
