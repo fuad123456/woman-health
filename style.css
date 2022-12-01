@@ -450,8 +450,42 @@ h1{
 	/* identical to box height */
 	text-align: center;
 	text-transform: uppercase;
-	
 	color: #FFFFFF;
+}
+/* ///////////////////////////////////BLOG */
+.blog{
+	padding-top: 150px;
+	position: relative;
+}
+.blog .petals{
+	width: 768px;
+	height: 455px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(./assets/background/rose-petals2.png)
+}
+.beautyblog-card{
+	background: #F1CBC9;
+	border-radius: 21px 21px 21px 21px;
+}
+
+.beautyblog-block{
+	padding:75px 56px 75px 120px;
+}
+.beautyblog .title{
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 14px;
+}
+.beautyblog .desc{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 16px;
 }
 /* //////////////////////////////////FOOTER */
 .footer {
